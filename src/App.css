@@ -6,7 +6,10 @@
 
 html,
 body {
-  background: #000 url('img/bg.jpg') no-repeat center center/cover;
+  background: #000 url('img/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100vh;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,6 +27,20 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.busqueda {
+  height: 100px;
+}
+
+input[type='text'] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
 }
 
 
@@ -62,7 +79,7 @@ header img {
 }
 
 .card:hover .card-inner {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .card-front,
@@ -75,10 +92,10 @@ header img {
 }
 
 .card-back {
-  background-color: #333;
+  background-color: rgb(82, 0, 68);
   color: white;
   padding: 20px;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .card li {

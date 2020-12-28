@@ -11,16 +11,16 @@ const UnPersonaje = ({item }) => {
           <h1>{item.name}</h1>
           <ul>
             <li>
-              <strong>Actor Name:</strong> {item.portrayed}
+              <strong>Nombre del actor:</strong> {item.portrayed}
             </li>
             <li>
-              <strong>Nickname:</strong> {item.nickname}
+              <strong>Sobrenombre:</strong> {item.nickname}
             </li>
             <li>
-              <strong>Birthday:</strong> {item.birthday}
+              <strong>Cumpleaños:</strong> {item.birthday}
             </li>
             <li>
-              <strong>Status:</strong> {item.status}
+              <strong>Estado:</strong> {item.status}
             </li>
           </ul>
         </div>

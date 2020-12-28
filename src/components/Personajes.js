@@ -1,8 +1,9 @@
 import React from 'react'
 import UnPersonaje from './UnPersonaje'
+import Loading from './Loading'
 
 const Personajes = ({items, isLoading}) => {
-    return isLoading ? (<h1>Loading...</h1>) 
+    return isLoading ? (<Loading/>) 
         : (
         <section className="tarjetas">
             {items.map((item) =>(

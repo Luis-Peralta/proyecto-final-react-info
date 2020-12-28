@@ -3,9 +3,9 @@ import logo from '../img/logo.jpg'
 
 const Header = () => {
     return (
-        <header className='center'>
+        <header className='center'>            
             <img src={logo} alt='logo' />
-            <h1>PERSONAJES DE BREAKING BAD</h1>
+            <h3 className="titulo">PERSONAJES DE BREAKING BAD</h3>            
         </header>
     )
 }

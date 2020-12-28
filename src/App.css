@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,6 +29,11 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.titulo{
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
 }
 
 .busqueda {
@@ -113,4 +120,31 @@ input[type='text'] {
   .tarjetas {
     grid-template-columns: 1fr;
   }
+}
+
+
+.pie {
+  position: relative;
+  top: 160px;
+  margin: 20px;
+  background: linear-gradient(rgba(37, 172, 160, 0.5), rgba(0,0,0,0.5));
+  text-shadow: 0px 0px 2px rgb(135, 138, 0);
+}
+
+.luis{
+  padding-top: 40px;
+  color: whitesmoke;
+  opacity: 50%;
+}
+
+.redes {
+  color: white;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+.redes:hover {
+  color: white;
+  opacity: 100%;
+  text-decoration: none;
 }

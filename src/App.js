@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header'
 import Personajes from './components/Personajes'
 import Busqueda from './components/Busqueda'
+import Footer from './components/Footer'
 
 const App = () => {
   const [items, setItems] = useState([])
@@ -22,10 +23,11 @@ const App = () => {
   }, [query])
 
   return (
-    <div className="container">
+    <div className="container">      
       <Header/>
       <Busqueda getQuery={(q) => setQuery(q)}/>
       <Personajes isLoading={isLoading} items={items} />
+      <Footer/>
     </div>
   );
 }

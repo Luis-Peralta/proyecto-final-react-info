@@ -143,6 +143,9 @@ input[type='text'] {
   padding-top: 40px;
   color: whitesmoke;
 }
+ul{
+  list-style:none;
+}
 
 .redes {
   color: rgb(168, 168, 168);

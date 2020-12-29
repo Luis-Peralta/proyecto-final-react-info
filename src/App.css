@@ -142,18 +142,15 @@ input[type='text'] {
 #luis{
   padding-top: 40px;
   color: whitesmoke;
-  opacity: 50%;
 }
 
-#redes {
-  color: white;
-  opacity: 50%;
+.redes {
+  color: rgb(168, 168, 168);
   list-style:none;
 }
 
-#redes:hover {
-  color: white;
-  opacity: 100%;
+.redes:hover {
+  color: rgb(255, 255, 255);
 }
 
 .boton-cargar{

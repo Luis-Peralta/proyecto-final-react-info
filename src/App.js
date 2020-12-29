@@ -5,11 +5,16 @@ import Header from './components/Header'
 import Personajes from './components/Personajes'
 import Busqueda from './components/Busqueda'
 import Footer from './components/Footer'
-
+var num = 2;
 const App = () => {
   const [items, setItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [query, setQuery] = useState('')
+  
+  
+  const [paginaActual] = useState(1);
+  let [numeroDePer, setNumeroDePer] = useState(8);
+
 
   useEffect(() =>{
     const fetchItems = async () => {
@@ -22,11 +27,31 @@ const App = () => {
     fetchItems()
   }, [query])
 
+   // Get current posts
+   const ultimoPer = paginaActual * numeroDePer;
+
+   const primerPer = ultimoPer - numeroDePer;
+   const currentPosts = items.slice(primerPer, ultimoPer);
+
+   // load mas personajes
+  
+  function loadMas(){
+    setNumeroDePer(8 * num)
+    num = num + 1; 
+  };
+  function restablecer(){
+    setNumeroDePer(8)
+    num = 2;
+  };
+
   return (
-    <div className="container">      
+    <div className="container" id="inicio">      
       <Header/>
       <Busqueda getQuery={(q) => setQuery(q)}/>
-      <Personajes isLoading={isLoading} items={items} />
+      <Personajes isLoading={isLoading} items={currentPosts} />
+      <button type="button" class="btn btn-success btn-lg boton-cargar" onClick={loadMas}>Cargar mas</button>
+      <a href="#inicio"><button type="button" class="btn btn-outline-success btn-lg boton-cargar" onClick={restablecer}>
+          Restablecer</button></a>
       <Footer/>
     </div>
   );

@@ -7,17 +7,17 @@ const Footer = () => {
                 <div className="col-sm-3"></div>
                 <div className="col-sm-6">
                     <h3><i>Contacto</i></h3>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/luisalejandroperalta/" target="_blank" className="redes"><i
+                    <ul id="redes">
+                        <li><a href="https://www.linkedin.com/in/luisalejandroperalta/" target="_blank" className="redes" style={{color: 'white'}}><i
                                     className="fab fa-linkedin-in"></i> Linkedin</a></li>
-                        <li><a href="https://github.com/Luis-Peralta" target="_blank" className="redes"><i
+                        <li><a href="https://github.com/Luis-Peralta" target="_blank" className="redes" style={{color: 'white'}}><i
                                     className="fab fa-github"></i> GitHub</a></li>
-                        <li><a href="https://www.instagram.com/luisperalta8/" target="_blank" className="redes"><i
+                        <li><a href="https://www.instagram.com/luisperalta8/" target="_blank" className="redes" style={{color: 'white'}}><i
                                     className="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
                 <div className="col-sm-3">
-                    <p className="luis">By Luis Peralta®</p>
+                    <p className="luis" id="luis">By Luis Peralta®</p>
                 </div>
             </div>
         </footer>

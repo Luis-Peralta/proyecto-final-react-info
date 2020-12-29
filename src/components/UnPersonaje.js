@@ -17,6 +17,9 @@ const UnPersonaje = ({item }) => {
               <strong>Sobrenombre:</strong> {item.nickname}
             </li>
             <li>
+              <strong>Ocupación:</strong> {item.occupation}
+            </li>
+            <li>
               <strong>Cumpleaños:</strong> {item.birthday}
             </li>
             <li>

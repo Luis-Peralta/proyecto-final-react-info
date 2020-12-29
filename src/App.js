@@ -59,9 +59,17 @@ const App = () => {
       <Header/>
       <Busqueda getQuery={(q) => setQuery(q)}/>
       <Personajes isLoading={isLoading} items={currentPosts} />
-      <button type="button" class="btn btn-success btn-lg boton-cargar" onClick={loadMas} id="boton">Cargar mas</button>
-      <a href="#inicio"><button type="button" class="btn btn-outline-success btn-lg boton-cargar" onClick={restablecer}>
-          Restablecer</button></a>
+      <div className="row">
+      <div className="col-sm-3"></div>
+      <div className="col-sm-6">
+          <button type="button" class="btn btn-success btn-lg boton-cargar" onClick={loadMas} id="boton">Cargar mas</button>
+          <a href="#inicio">
+            <button type="button" class="btn btn-outline-success btn-lg boton-cargar" onClick={restablecer}>
+              Restablecer</button></a>
+      </div>
+      <div className="col-sm-3"></div>
+      </div>
+      
       <Footer/>
     </div>
   );

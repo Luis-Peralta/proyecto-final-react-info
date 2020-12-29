@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto&display=swap');
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 html,
 body {
@@ -41,8 +41,7 @@ header img {
 .titulo{
   color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
-  margin: 2px;
-  padding: 4%;
+
 }
 
 .busqueda {
@@ -158,6 +157,28 @@ ul{
 
 .boton-cargar{
   width: 400px;
-  margin-left: 30%;
+  margin-left: 15%;
   margin-top: 3%;
+}
+
+@media (max-width: 800px) {
+  .boton-cargar{
+    width: 300px;
+    margin-left: 15px;
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 800px) {
+   header img {
+    margin-top: 20px;
+    width: 200px;
+  }
+
+  .titulo{
+    position: absolute;
+    color: rgba(0, 0, 0);
+    text-shadow: 2px 2px 5px white;
+    font-family: 'Roboto', sans-serif;  
+  }
 }
